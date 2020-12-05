@@ -1,11 +1,11 @@
 //Action型のエイリアス
-export type Action = {
+export type CountStateAction = {
     type: "count/increment",
     payload: number
 };
 
 
-export const countIncrement = (value: number): Action => {
+export const countIncrement = (value: number): CountStateAction => {
     return (
         {
             type: "count/increment",
